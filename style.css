@@ -1,0 +1,72 @@
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}
+
+.left-side, .right-side {
+    flex: 1;
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+.image-wrapper {
+    position: relative;
+}
+
+
+.logo-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+}
+
+.logo-overlay img {
+    height: 40px;
+}
+
+.logo-overlay p {
+    color: white;
+    margin: 0;
+}
+
+.credits {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 0.8rem;
+}
+ .credits a {
+    color: white;
+ }
